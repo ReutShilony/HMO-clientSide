@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User - HMO COVID Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body dir="rtl">
+    <h1>הוסף חבר</h1>
+    <form id="addUserForm">
+        <label for="id">מספר זהות</label><br>
+        <input type="text" id="id" name="id" required><br><br>
+
+        <label for="firstName">שם פרטי</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+        
+        <label for="lastName">שם משפחה</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        
+        <label for="phone">טלפון</label><br>
+        <input type="text" id="phone" name="phone" required><br><br>
+        
+        <label for="cellphone">נייד</label><br>
+        <input type="text" id="cellphone" name="cellphone"><br><br>
+        
+        <label for="city">עיר</label><br>
+        <input type="text" id="city" name="city" required><br><br>
+        
+        <label for="street">רחוב</label><br>
+        <input type="text" id="street" name="street" required><br><br>
+        
+        <label for="houseNumber">מספר בית</label><br>
+        <input type="text" id="houseNumber" name="houseNumber" required><br><br>
+        
+        <label for="sickDate">תאריך מחלה</label><br>
+        <input type="date" id="sickDate" name="sickDate" required><br><br>
+        
+        <label for="recoveryDate">תאריך החלמה</label><br>
+        <input type="date" id="recoveryDate" name="recoveryDate" required><br><br>
+
+        <label for="numVaccines">מס' חיסונים</label><br>
+        <select id="numVaccines" name="numVaccines" onchange="showVaccineDetails()">
+            <option value="0">אנא בחר מס' חיסונים</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select><br><br>
+
+        <div id="vaccineDetails"></div>
+        
+        <input type="submit" value="Submit" onclick="addUser()">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
