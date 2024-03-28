@@ -8,13 +8,16 @@
 </head>
 <body onload="init()">
     <h1>HMO COVID Tracker</h1>
-    <table id="userTable">
+    <table id="userTable" >
         <thead>
             <tr>
+                <th>ID</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Phone</th>
+                <th>Adress</th>
                 <th>Sick Date</th>
+                <th>Recovery Date</th>
             </tr>
         </thead>
         <tbody id="userTableBody"></tbody>
@@ -22,7 +25,13 @@
     <br/>
     <br/>
     <br/>
-    <a href="add_user.html">הוסף משתמש</a>
+    <a href="add_user.html">Add User</a>
+    <a href ="home.html" onclick="deleteUser()">Delete</a>
+    <button onclick="updateUser()">Update</button>
+    <!-- <a href ="update_user.html" onclick="updateUser()">Update</a> -->
+    <input id="userId" type="text">Enter ID</input>
+    
+    
 
     <script src="script.js"></script>
 

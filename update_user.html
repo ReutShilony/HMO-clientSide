@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add User - HMO COVID Tracker</title>
+    <title>Update User - HMO COVID Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Add User</h1>
-    <form id="addUserForm">
-        <label for="id">ID</label><br>
-        <input type="text" id="id" name="id" required><br><br>
+    <h1>Update User</h1>
+    <form id="updateUserForm">
+        <label for="userId">User ID</label><br>
+        <input type="text" id="userId" name="userId" required><br><br>
 
         <label for="firstName">First Name</label><br>
         <input type="text" id="firstName" name="firstName" required><br><br>
         
-        <label for="lastName">last Name</label><br>
+        <label for="lastName">Last Name</label><br>
         <input type="text" id="lastName" name="lastName" required><br><br>
         
         <label for="phone">Phone</label><br>
@@ -50,7 +50,7 @@
 
         <div id="vaccineDetails"></div>
         
-        <a href ="home.html" onclick="addUser()">Add User</a>
+        <button type="button" onclick="updateUser()">Update User</button>
     </form>
 
     <script src="script.js"></script>
