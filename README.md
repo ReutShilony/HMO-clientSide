@@ -64,7 +64,3 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 3. Make your changes and commit them (`git commit -am 'Add new feature'`).
 4. Push your changes to the branch (`git push origin feature/improvement`).
 5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
